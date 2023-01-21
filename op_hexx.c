@@ -29,7 +29,7 @@ int print_hex(va_list ap)
 		i++;
 	}
 
-	for (j = i - 1; j >= 0; j--)
+	
 	{
 		count += _putchar(hexArr[j]);
 	}
