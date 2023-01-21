@@ -69,4 +69,3 @@ int ascii_hex(int char_int)
 		count += _putchar(hexArr[j]);
 	}
 	return (count);
-}
