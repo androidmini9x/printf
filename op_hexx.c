@@ -28,8 +28,7 @@ int print_hex(va_list ap)
 		dec /= 16;
 		i++;
 	}
-
-	
+	for (j = i - 1; j >= 0; j--)
 	{
 		count += _putchar(hexArr[j]);
 	}
