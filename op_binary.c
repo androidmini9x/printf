@@ -29,5 +29,5 @@ int print_binary(va_list ap)
 		return (1);
 	}
 
-	
+	return (count);
 }
