@@ -6,7 +6,10 @@
  */
 int print_int(va_list ap)
 {
-	
+	unsigned int number;
+	unsigned int divider = 1;
+	int count = 0;
+	int arg = va_arg(ap, int);
 
 	if (arg < 0)
 	{
