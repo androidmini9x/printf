@@ -28,4 +28,4 @@ typedef struct op
 	char op_type;
 	int (*func)();
 } op_t;
-#endif
+
