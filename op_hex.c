@@ -31,7 +31,7 @@ int print_hex_s(va_list ap)
 
 	for (j = i - 1; j >= 0; j--)
 	{
-		count += _putchar(hexArr[j]);
+		
 	}
 	return (count);
 }
