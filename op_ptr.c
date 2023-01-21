@@ -44,5 +44,5 @@ int print_ptr(va_list ap)
 		count += _putchar(hexArr[j]);
 	}
 
-	return (count);
+	
 }
