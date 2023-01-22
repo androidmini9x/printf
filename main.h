@@ -18,6 +18,8 @@ int print_strhex(va_list ap);
 int print_ptr(va_list ap);
 int print_rstr(va_list ap);
 int print_r13(va_list ap);
+/* get_flag */
+int get_flag(char s, flags_t *f);
 /**
  * struct op - operation
  * @op_type: print type
