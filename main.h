@@ -21,6 +21,7 @@ int print_r13(va_list ap);
 /* get_flag */
 int get_flag(char s, flags_t *f);
 void handle_flags(char flag)
+void init_params(params_t *params, va_list ap)	
 /**
  * struct op - operation
  * @op_type: print type
