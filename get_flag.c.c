@@ -1,45 +1,26 @@
 #include "main.h"
 
 /**
- * get_flag - turns on flags if _printf finds
- * a flag modifier in the format string
- * @s: character that holds the flag specifier
- * @f: pointer to the struct flags in which we turn the flags on
- * Return: 0;
+ * init_params - clears struct fields and reset buf
+ * @params: the parameters struct
+ * @ap: the argument pointer
+ * Return: void
  */
 
-void handle_flags(char flag)
+void init_params(params_t *params, va_list ap)
 {
-    switch(flag)
-    {
-        case '+':
-            printf("Flag +: Show the sign for both positive and negative numbers.\n");
-            break;
-        case ' ':
-            printf("Flag space: Leave a space before positive numbers.\n");
-            break;
-        case '#':
-            printf("Flag #: Alternate form of conversion.\n");
-            break;
-        case '0':
-            printf("Flag 0: Pad the field width with zeros.\n");
-            break;
-        case '-':
-            printf("Flag -: Left-justify within the field width.\n");
-            break;
-        default:
-            printf("Invalid flag character.\n");
-            break;
-    }
-}
+	params->unsign = 0;
 
-int main()
-{
-    handle_flags('+');
-    handle_flags(' ');
-    handle_flags('#');
-    handle_flags('0');
-    handle_flags('-');
+	params->plus_flag = 0;
+	params->space_flag = 0;
+	params->hashtag_flag = 0;
+	params->zero_flag = 0;
+	params->minus_flag = 0;
 
-    return 0;
-}
+	params->width = 0;
+	params->precision = UINT_MAX;
+
+	params->h_modifier = 0;
+	params->l_modifier = 0;
+	(void)ap;
+}     
