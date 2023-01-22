@@ -22,6 +22,11 @@ int print_r13(va_list ap);
 int get_flag(char s, flags_t *f);
 void handle_flags(char flag)
 void init_params(params_t *params, va_list ap)	
+	unsigned int plus_flag		: 1;
+	unsigned int space_flag		: 1;
+	unsigned int hashtag_flag	: 1;
+	unsigned int zero_flag		: 1;
+	unsigned int minus_flag		: 1;	
 /**
  * struct op - operation
  * @op_type: print type
