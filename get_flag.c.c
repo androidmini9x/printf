@@ -26,11 +26,11 @@ int get_flag(char s, flags_t *f)
         f->hash = 1;
         i = 1;
         break;
-    }  case '0':
+    case '0':
         f->zero = 1;
         i = 1;
         break;
-    }
+    
      case '-':
         f->min = 1;
         i = 1;
