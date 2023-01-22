@@ -1,9 +1,11 @@
 #include "main.h"
 
 /**
- * handle_flags - Matches flags with corresponding values.
- * @flag: A pointer to a potential string of flags.
- * Return:  0;
+ * get_flag - turns on flags if _printf finds
+ * a flag modifier in the format string
+ * @s: character that holds the flag specifier
+ * @f: pointer to the struct flags in which we turn the flags on
+ * Return: 0;
  */
 
 void handle_flags(char flag)
