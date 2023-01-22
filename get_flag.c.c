@@ -1,32 +1,44 @@
 #include "main.h"
 
 /**
- * get_flag - turns on flags if _printf finds
- * a flag modifier in the format string
- * @s: character that holds the flag specifier
- * @f: pointer to the struct flags in which we turn the flags on
- *
- * Return: 1 if a flag has been turned on, 0 otherwise
+ * handle_flags - Matches flags with corresponding values.
+ * @flag: A pointer to a potential string of flags.
+ * Return: If flag characters are matched - a corresponding value.
+ *         Otherwise - 0.
  */
-int get_flag(char s, flags_t *f)
+
+void handle_flags(char flag)
 {
-    int i = 0;
-
-    switch (s)
+    switch(flag)
     {
-    case '+':
-        f->plus = 1;
-        i = 1;
-        break;
-    case ' ':
-        f->space = 1;
-        i = 1;
-        break;
-    case '#':
-        f->hash = 1;
-        i = 1;
-        break;
+        case '+':
+            printf("Flag +: Show the sign for both positive and negative numbers.\n");
+            break;
+        case ' ':
+            printf("Flag space: Leave a space before positive numbers.\n");
+            break;
+        case '#':
+            printf("Flag #: Alternate form of conversion.\n");
+            break;
+        case '0':
+            printf("Flag 0: Pad the field width with zeros.\n");
+            break;
+        case '-':
+            printf("Flag -: Left-justify within the field width.\n");
+            break;
+        default:
+            printf("Invalid flag character.\n");
+            break;
     }
+}
 
-    return (i);
+int main()
+{
+    handle_flags('+');
+    handle_flags(' ');
+    handle_flags('#');
+    handle_flags('0');
+    handle_flags('-');
+
+    return 0;
 }
