@@ -1,42 +1,43 @@
 #include "main.h"
-#include <stdio.h>
 
 /**
  * handle_flags - Matches flags with corresponding values.
  * @flag: A pointer to a potential string of flags.
+ * @index: An index counter for the original format string.
+ *
  * Return: If flag characters are matched - a corresponding value.
  *         Otherwise - 0.
  */
-
-void handle_flags(char flag)
+unsigned char handle_flags(const char *flag, char *index)
 {
-    switch(flag)
-    {
-        case '+':
-            printf("Flag +: Show the sign for both positive and negative numbers.\n");
-            break;
-        case ' ':
-            printf("Flag space: Leave a space before positive numbers.\n");
-            break;
-        case '#':
-            printf("Flag #: Alternate form of conversion.\n");
-            break;
-        case '0':
-            printf("Flag 0: Pad the field width with zeros.\n");
-            break;
-        case '-':
-            printf("Flag -: Left-justify within the field width.\n");
-            break;
-    }
-}
+	int i, j;
+	unsigned char ret = 0;
+	flag_t flags[] = {
+		{'+', PLUS},
+		{' ', SPACE},
+		{'#', HASH},
+		{'0', ZERO},
+		{'-', NEG},
+		{0, 0}
+	};
 
-int main()
-{
-    handle_flags('+');
-    handle_flags(' ');
-    handle_flags('#');
-    handle_flags('0');
-    handle_flags('-');
+	for (i = 0; flag[i]; i++)
+	{
+		for (j = 0; flags[j].flag != 0; j++)
+		{
+			if (flag[i] == flags[j].flag)
+			{
+				(*index)++;
+				if (ret == 0)
+					ret = flags[j].value;
+				else
+					ret |= flags[j].value;
+				break;
+			}
+		}
+		if (flags[j].value == 0)
+			break;
+	}
 
-    return 0;
-}
+	return (ret);
+}	
