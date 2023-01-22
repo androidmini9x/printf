@@ -3,8 +3,7 @@
 /**
  * handle_flags - Matches flags with corresponding values.
  * @flag: A pointer to a potential string of flags.
- * Return: If flag characters are matched - a corresponding value.
- *         Otherwise - 0.
+ * Return:  0;
  */
 
 void handle_flags(char flag)
