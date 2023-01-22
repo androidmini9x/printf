@@ -22,16 +22,15 @@ int get_flag(char s, flags_t *f)
         f->space = 1;
         i = 1;
         break;
-   case '#':
+    case '#':
         f->hash = 1;
         i = 1;
         break;
     case '0':
         f->zero = 1;
         i = 1;
-        break;
-    
-     case '-':
+        break;   
+    case '-':
         f->min = 1;
         i = 1;
         break;
