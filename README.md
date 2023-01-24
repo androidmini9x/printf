@@ -50,3 +50,7 @@ Hello, world!
 
 - _printf is not intended to be a full replacement for printf, but rather a demonstration of how the printf function can be implemented.
 - The implementation of _printf may differ from the implementation of printf in the standard C library.
+
+### Contributing
+
+If you would like to contribute to the development of `_printf`, please feel free to submit pull requests or issues on the GitHub repository.
