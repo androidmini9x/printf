@@ -1,6 +1,6 @@
 #include "main.h"
 /**
- * print_int - print integer number
+ * print_int - print integer
  * @ap: pointer
  * Return: count of printed length
  */
