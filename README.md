@@ -39,3 +39,9 @@ This will output:
 Hello, world!
 ```
 
+### Limitations
+
+- _printf does not support all the format specifiers of the standard printf function.
+- _printf does not support floating point numbers.
+- _printf does not support the width and precision field of the format specifiers.
+- _printf does not handle invalid format strings or conversion specifiers.
