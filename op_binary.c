@@ -2,7 +2,7 @@
 /**
  * print_binary - print unsigned integer as binary
  * @ap: pointer
- * Return: count of printed length
+ * Return: the count of printed length
  */
 int print_binary(va_list ap)
 {
