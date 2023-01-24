@@ -44,7 +44,7 @@ int print_rstr(va_list ap)
 	return (len);
 }
 /**
- * print_r13 - prints the rot13'ed string
+ * print_r13 - prints the rot13 string
  * @ap: pointer
  * Return: number of printed char
  */
