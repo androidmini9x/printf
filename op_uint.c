@@ -1,6 +1,6 @@
 #include "main.h"
 /**
- * print_unint - print integer
+ * print_unint - print unsigned integer
  * @ap: pointer
  * Return: count of printed length
  */
