@@ -9,7 +9,7 @@ int print_char(va_list ap)
 	return (_putchar(va_arg(ap, int)));
 }
 /**
- * print_pres - print char
+ * print_pres - print module sign
  * Return: int
  */
 int print_pres(void)
