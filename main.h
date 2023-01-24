@@ -20,7 +20,7 @@ int print_rstr(va_list ap);
 int print_r13(va_list ap);
 /**
  * struct op - operation
- * @op_type: type
+ * @op_type: print type
  * @func: calling function
  */
 typedef struct op
