@@ -1,6 +1,6 @@
 #include "main.h"
 /**
- * print_hex_s - print number as hex
+ * print_hex_s - print number as hexdecimal
  * Small letter %x
  * @ap: pointer
  * Return: count of printed length
