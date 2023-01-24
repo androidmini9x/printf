@@ -54,3 +54,8 @@ Hello, world!
 ### Contributing
 
 If you would like to contribute to the development of `_printf`, please feel free to submit pull requests or issues on the GitHub repository.
+
+### Attribution
+
+`_printf` function was created by @androidmini9x & @souadhelmy as a project for **Alx School**.
+
