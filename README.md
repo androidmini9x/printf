@@ -27,3 +27,15 @@ The following conversion specifiers are currently supported by _printf:
 | `%r` | Prints a string in reverse. |
 | `%R` | Prints a string in rot13 encryption. |
 
+### Example
+
+```C
+_printf("Hello, %s!\n", "world");
+```
+
+This will output:
+
+```
+Hello, world!
+```
+
