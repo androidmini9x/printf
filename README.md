@@ -45,3 +45,8 @@ Hello, world!
 - _printf does not support floating point numbers.
 - _printf does not support the width and precision field of the format specifiers.
 - _printf does not handle invalid format strings or conversion specifiers.
+
+### Additional Information
+
+- _printf is not intended to be a full replacement for printf, but rather a demonstration of how the printf function can be implemented.
+- The implementation of _printf may differ from the implementation of printf in the standard C library.
